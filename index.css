@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=DotGothic16&family=Happy+Monkey&family=Montserrat:wght@600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,200;1,600&family=Open+Sans:wght@700&family=Orbitron:wght@800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:wght@400;700&family=Silkscreen&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  background-image: url("photo.svg");
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  /* it stays in center after 900px */
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  /* horizontal , vertical , blur , radius */
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+  /* please check out my blog regarding why i used rem instead of width */
+  font-size: 2.75rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 00.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  .quote-text {
+    font-size: 2rem;
+  }
+}
